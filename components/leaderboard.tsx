@@ -1,12 +1,12 @@
-import Image from "next/image"
+import Image from "next/image";
 
 interface LeaderboardEntry {
-  rank: number
-  name: string
-  country: string
-  flag: string
-  score: number
-  scoreColor: string
+  rank: number;
+  name: string;
+  country: string;
+  flag: string;
+  score: number;
+  scoreColor: string;
 }
 
 export default function Leaderboard() {
@@ -35,7 +35,14 @@ export default function Leaderboard() {
       score: 84,
       scoreColor: "bg-yellow-500",
     },
-    { rank: 4, name: "Kode", country: "Japan", flag: "/images/flags/japan.png", score: 79, scoreColor: "bg-red-500" },
+    {
+      rank: 4,
+      name: "Kode",
+      country: "Japan",
+      flag: "/images/flags/japan.png",
+      score: 79,
+      scoreColor: "bg-red-500",
+    },
     {
       rank: 5,
       name: "Ajay Singh Deora",
@@ -44,20 +51,13 @@ export default function Leaderboard() {
       score: 75,
       scoreColor: "bg-orange-500",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-pink-50">
-       <span className="flex justify-center mb-4 text-6xl font-bold text-gray-500 " style={{ fontFamily: 'Product Sans, sans-serif' }}>
-                    {/* <Image
-                      src="/Lead.svg"
-                      alt="Leaderboard Icon"
-                      width={700}
-                      height={700}
-                    /> */}
-
-                    GLOBAL LEADERBOARD 2024
-                  </span>
+      <span className="flex justify-center mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-500 font-sans text-shadow text-center px-2">
+        GLOBAL LEADERBOARD 2024
+      </span>
       <div className="max-w-6xl mx-auto mt-10">
         <Image
           src="/Leaderboard.png"
@@ -66,10 +66,9 @@ export default function Leaderboard() {
           height={400}
           className="w-full h-auto"
         />
-        
       </div>
 
-       <div className="flex justify-center mt-6 sm:mt-8 px-4">
+      <div className="flex justify-center mt-6 sm:mt-8 px-4">
         <a
           href="https://unstop.com/o/kZSVs5q?lb=sDELTvhK&utm_medium=Share&utm_source=ashutpan9454&utm_campaign=Online_coding_challenge"
           target="_blank"
@@ -82,8 +81,6 @@ export default function Leaderboard() {
           </span>
         </a>
       </div>
-
-      
     </section>
-  )
+  );
 }
