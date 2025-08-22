@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-pink-50"
-      style={{ fontFamily: "Product Sans, sans-serif" }}
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-pink-50 font-sans"
     >
       <div className="max-w-8xl mx-auto">
         <div className="flex items-center justify-center mb-12">
